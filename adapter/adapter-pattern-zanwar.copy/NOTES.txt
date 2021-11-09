@@ -1,4 +1,0 @@
-Status: working 
-
-Article: Adapter Pattern
-URL: https://dev.to/shubhamzanwar/adapter-pattern-4knn
