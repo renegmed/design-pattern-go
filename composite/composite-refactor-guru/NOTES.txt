@@ -1,0 +1,5 @@
+Status: working 
+
+Title: Composite in Go
+URL: https://refactoring.guru/design-patterns/composite/go/example#example-0
+

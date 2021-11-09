@@ -1,0 +1,5 @@
+Status: working 
+
+Title: Mediator Design Pattern in Go 
+URL: https://dev.to/tomassirio/mediator-design-pattern-in-go-15ma
+

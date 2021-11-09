@@ -1,0 +1,19 @@
+Status: working 
+
+Title:
+URL: https://faun.pub/head-first-design-patterns-using-go-5-encapsulating-invocation-the-command-pattern-2f8c0a79d1c7
+Github: https://github.com/pi-sin/head-first-design-patterns-in-golang
+
+
+A command object encapsulates a request to do something (like turn on a light) on a 
+specific object (say, the living room light object). 
+
+So, if we store a command object for each button, when the button is pressed we ask 
+the command object to do some work.
+
+
+Wiki Definition: 
+
+The Command Pattern encapsulates a request as an object, thereby letting you parameterise 
+other objects with different requests, queue or log requests, and support undoable operations.
+

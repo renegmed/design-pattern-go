@@ -1,0 +1,47 @@
+Status: working 
+
+Title: Head First Design Patterns using Go — 2. Keeping your Objects in the know: the Observer Pattern
+URL: https://faun.pub/head-first-design-patterns-using-go-1-keeping-your-objects-in-the-know-the-observer-pattern-948e6b5b66fc
+
+Wiki Definition: 
+
+The Observer Pattern defines a one-to-many relationship between a set of objects. 
+When the state of one object changes, all of its dependents are notified.
+
+    The Observer Pattern provides an object design where subjects and observers are loosely coupled.
+
+    - The only thing the subject knows about an observer is that it implements a certain 
+      interface (the Observer interface).
+
+    - We can add new observers at any time.
+
+    - We never need to modify the subject to add new types of observers.
+
+    - We can reuse subjects or observers independently of each other.
+
+    - Changes to either the subject or an observer will not affect the other.
+
+
+Design Principle 4: 
+
+  Strive for loosely coupled designs between objects that interact.
+
+
+
+BIG PICTURE
+-----------
+
+    Use the Observer pattern when changes to the state of one object may 
+    require changing other objects, and the actual set of objects is unknown 
+    beforehand or changes dynamically. 
+    
+       Example, button class in android lets you write custom code to 
+       your buttons so that it fires whenever a user presses a button.
+    
+    Use the pattern when some objects in your app must observe others, but 
+    only for a limited time or in specific cases. 
+    
+       Example, how Kafka captures MySQL CDC (Change Data Capture).
+
+
+

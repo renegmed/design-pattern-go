@@ -1,0 +1,48 @@
+package beverage
+
+type beverage struct {
+	description string
+	milk        bool
+	milkCost    float32
+	soy         bool
+	soyCost     float32
+	mocha       bool
+	mochaCost   float32
+	whip        bool
+	whipCost    float32
+}
+
+func (b *beverage) getCost() float32 {
+	var condimentCost float32
+
+	if b.milk {
+		condimentCost += b.milkCost
+	}
+
+	if b.soy {
+		condimentCost += b.soyCost
+	}
+
+	if b.mocha {
+		condimentCost += b.mochaCost
+	}
+
+	if b.whip {
+		condimentCost += b.whipCost
+	}
+
+	return condimentCost
+}
+
+type darkRoast struct {
+	beverage
+	darkRoastCost float32
+}
+
+func NewDarkRoast() *darkRoast {
+	return &darkRoast{}
+}
+
+func (d *darkRoast) getCost() float32 {
+	return d.darkRoastCost + d.beverage.getCost()
+}

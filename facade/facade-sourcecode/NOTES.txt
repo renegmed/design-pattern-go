@@ -1,0 +1,22 @@
+Status: working 
+
+Title: Golang Facade Pattern 
+URL: https://www.sourcecodeexamples.net/2021/06/golang-facade-pattern.html
+
+The Facade pattern is used to abstract subsystem interfaces with a helper. The 
+facade design pattern is used in scenarios when the number of interfaces increases 
+and the system gets complicated.
+
+The Facade is an entry point to different subsystems, and it simplifies the dependencies 
+between the systems. The facade pattern provides an interface that hides the implementation 
+details of the hidden code.
+
+A loosely coupled principle can be realized with a facade pattern. You can use a facade 
+to improve poorly designed APIs. In SOA, a service facade can be used to incorporate 
+changes to the contract and implementation.
+
+Golang Facade Pattern Implementation
+------------------------------------
+
+For example, account, customer, and transaction are the classes that have account, 
+customer, and transaction creation methods. BranchManagerFacade can be used by the client to create an account, customer, and transaction.

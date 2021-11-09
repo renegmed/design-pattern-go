@@ -1,0 +1,12 @@
+Status: working 
+
+Title: The Factory Pattern In Go
+URL: https://levelup.gitconnected.com/the-factory-pattern-in-go-a584a9467ffd
+
+
+In general, you should think of using the Factory pattern when you 
+need some object that could be dependent on other objects. 
+
+Localizing the logic of a complex object is another ideal situation 
+for Factory pattern, but it’s important to make sure you don’t 
+over-abstract your program 

@@ -1,0 +1,17 @@
+Status: working 
+
+Title: The Decorator Pattern In Go
+URL: https://levelup.gitconnected.com/the-decorator-pattern-in-go-66ed951b0f7c
+
+Decorator pattern allows you to add functionality to an object dynamically at 
+run time instead of compile time. What this means is that you don’t have to manually 
+write new code to extend an object’s feature set, you can simply use the 
+decorator pattern to add behavior as you need it!
+
+It also solves the issue of becoming restricted by an extensive sub-class architecture. 
+
+Instead of getting lost in inheritance, the Decorator pattern uses lots of smaller 
+classes (in Go’s case structs) in order to wrap functionality around other objects. 
+
+This way we can have many objects with variations of functionality instead of having 
+to define each individual class.

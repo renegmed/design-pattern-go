@@ -1,0 +1,30 @@
+Status: wip 
+
+Title: 6. Template method pattern
+URL: https://programmerall.com/article/3965356491/
+
+Define the skeleton of an algorithm in operation and 
+delay some steps to subclasses. 
+
+The template method allows subclasses to redefine certain 
+specific steps of an algorithm without changing the 
+structure of the algorithm.
+
+NOTE:
+
+Since Go can't define abstract methods in the parent class 
+like Java, and then implement them in the subclass, in order 
+to achieve the actual effect is to call the subclass method 
+in the parent class method. 
+
+Here we use the method passed in func to achieve abstraction method.
+
+Animals haveEat()withSleep()Methods, for different animals, the 
+effects of Eat and Sleep methods are different. 
+
+But it’s roughly the same, each animal is just slightly different, 
+then we can use the template method pattern to abstract animal realization
+Template method,inTemplate method
+
+To leave specific animals one by oneEmpty method, Wait for specific 
+animals to realize theEmpty method.

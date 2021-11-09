@@ -1,0 +1,1 @@
+This is a collection for Go's various design pattern for learning.

@@ -1,0 +1,8 @@
+Status: working 
+
+Article: Adapter Pattern
+URL: https://dev.to/shubhamzanwar/adapter-pattern-4knn
+
+The Adapter pattern is a structural design pattern. It allows 2 or more incompatible objects to interface with each other.
+
+The first thing that comes to mind it probably the adapters for wall-sockets that allow your Indian phone charger to fit into European wall sockets! That's exactly what adapters are. They are wrapper classes written around non-uniform classes so that the end result exposes a uniform API.

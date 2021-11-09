@@ -1,0 +1,23 @@
+Status: working 
+
+Title: Head First Design Patterns using Go — 4. Baking with OO goodness: the Factory Pattern
+URL: https://faun.pub/head-first-design-patterns-using-go-4-baking-with-oo-goodness-the-factory-pattern-181bbbf4a8fb
+
+Wiki Definition: 
+
+The Factory Pattern defines an interface for creating an object, but lets subclasses decide which 
+class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+
+
+BIG PICTURE
+
+    The Factory Pattern separates product construction code from the code that actually uses the product. 
+    Therefore it’s easier to extend the product construction code independently from the rest of the code. 
+    Example, to franchise the PizzaStore to new areas, we need to just create a new creator subclass and 
+    override the factory method (createPizza) in that.
+    
+    Use the Factory Method when you want to reuse the existing objects instead of rebuilding them each time.
+
+
+With the Factory Pattern, we have created a framework that lets the subclasses decide which implementation 
+of CreatePizza() will be used.

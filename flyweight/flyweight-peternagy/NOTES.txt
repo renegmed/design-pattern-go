@@ -1,0 +1,23 @@
+Status: working 
+
+Title: Golang flyweight pattern
+URL: https://peternagy.ie/golang-flyweight-pattern/
+
+The flyweight pattern is a good design pattern to reduce memory. 
+
+The core idea is to initialize objects an share them as often as 
+possible for reuse. 
+
+Mostly the flyweight pattern can be seen in desktop UI implementation (GUI). 
+In Java Swing, for instance, the JTable rendering uses this pattern, to 
+reduce the computation needed for painting. 
+
+String pools might use the pattern as well to reuse the expensive 
+character arrays forming each string, among many other use cases.
+
+There are some really good use cases for flyweight pattern in web applications. 
+One of them I use regularly is for handling multiple connection pools, in 
+which case a map is backing the pointer to the initialized connection pools. 
+
+Another example is event logging, where the logger can call on events from 
+a pool, and pass them to a message queue.

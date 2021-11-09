@@ -1,0 +1,9 @@
+init-project:
+	go mod init facade_design_pattern 
+
+build:
+	go build -race -o app . 
+
+run: build 
+	./app 
+	

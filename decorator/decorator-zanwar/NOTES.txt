@@ -1,0 +1,4 @@
+Status: working 
+
+Article: Decorator Pattern 
+URL: https://dev.to/shubhamzanwar/decorator-pattern-19kb

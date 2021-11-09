@@ -1,0 +1,23 @@
+Status: working 
+
+Title: Golang Bridge Pattern 
+URL: https://www.sourcecodeexamples.net/2021/06/golang-bridge-pattern.html
+
+Bridge decouples the implementation from the abstraction. The abstract base class 
+can be subclassed to provide different implementations and allow implementation 
+details to be modified easily. 
+
+The interface, which is a bridge, helps in making the functionality of concrete 
+classes independent from the interface implementer classes. 
+
+The bridge patterns allow the implementation details to change at runtime.
+
+Golang Bridge Pattern Implementation
+------------------------------------
+
+Let's say IDrawShape is an interface with the drawShape() method. DrawShape implements 
+the IDrawShape interface. 
+
+We create an IContour bridge interface with the drawContour() method. The Contour class 
+implements the IContour interface. 
+

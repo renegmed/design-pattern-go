@@ -1,0 +1,15 @@
+Builder patterns are useful but sometimes can be a pain in wrong places. 
+
+The upside is being able to create complex objects more easily with control over what 
+properties to expose and what to hide from the end-user, but the downside is whenever 
+a new property is added we need to create a new function to set the value.
+
+Builder Facets can be used to functionally break the builder in smaller sub-builders 
+that can work in tandem to create a complex object.
+
+Builder Parameters can be used to have control over the properties that we want to 
+expose to our developers.
+
+Functional way of creating builders enable us to create fluent APIs that are easy to read.
+
+

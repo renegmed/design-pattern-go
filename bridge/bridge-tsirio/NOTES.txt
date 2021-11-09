@@ -1,0 +1,5 @@
+Status: working 
+
+Title: Bridge Design Pattern in Go
+URL: https://dev.to/tomassirio/bridge-design-pattern-in-go-4bb0
+

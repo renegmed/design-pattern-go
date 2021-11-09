@@ -1,0 +1,4 @@
+Status: working
+
+Article: Abstract Factory pattern 
+URL: https://dev.to/shubhamzanwar/abstract-factory-pattern-6f8

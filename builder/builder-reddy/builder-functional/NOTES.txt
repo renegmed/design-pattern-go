@@ -1,0 +1,7 @@
+Status: working 
+
+Title: Go Builder Pattern — The Functional Way
+URL: https://devcharmander.medium.com/go-builder-pattern-the-functional-way-e40f347017ce
+
+
+One way to extend the builder that you already have is by using a Functional Programming approach!

@@ -1,0 +1,4 @@
+Status: working 
+
+Article: Bridge Pattern
+URL: https://github.com/shubhamzanwar/design-patterns/tree/master/5-bridge

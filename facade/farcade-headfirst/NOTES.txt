@@ -1,0 +1,62 @@
+Status: wip 
+
+Title: Head First Design Patterns using Go — 6. Being Adaptive: the Adapter and Facade Patterns
+URL: https://faun.pub/head-first-design-patterns-using-go-6-being-adaptive-the-adapter-and-facade-patterns-c6361a602c3a
+Github: https://github.com/pi-sin/head-first-design-patterns-in-golang
+
+With the Facade Pattern, we can take a complex subsystem and make it easier to use by 
+implementing a Facade class that provides one, more readable interface. 
+
+It allows us to avoid tight coupling between clients and subsystems.
+
+Wiki Definition: 
+
+    The Facade Pattern provides a unified interface to a set of interfaces in a 
+    subsystem. 
+
+    Facade defines a higher level interface that makes the subsystem easier to use.
+
+What’s the benefit of the facade other than the fact that I now have a simpler 
+interface? — The Facade Pattern also allows you to decouple your client implementation 
+from any one subsystem.
+
+Let’s say for instance that you get a big raise and decide to upgrade your home theater 
+to all new components that have different interfaces. 
+
+Well, if you coded your client to the facade rather than the subsystem, your client 
+code doesn’t need to change, just the facade. 
+
+
+To watch a movie, we need to perform a few tasks:
+
+     1. Turn on the popcorn popper
+     2. Start the popper popping
+     3. Dim the lights
+     4. Put the screen down
+     5. Turn the projector on
+     6. Put the projector on wide-screen mode
+     7. Turn the sound amplifier on
+     8. Set the amplifier to surround sound
+     9. Set the amplifier volume to medium (5)
+    10. Turn the DVD Player on
+    11. Start the DVD Player playing
+
+BIG PICTURE
+-----------
+    
+Use the Facade pattern when you need to have a limited but straightforward interface to a complex subsystem.
+
+Often, subsystems get more complex over time. Even applying design patterns typically 
+leads to creating more classes. 
+
+A subsystem may become more flexible and easier to reuse in various contexts, but the amount 
+of configuration and boilerplate code it demands from a client grows ever larger. 
+
+The Facade attempts to fix this problem by providing a shortcut to the most-used features of 
+the subsystem which fit most client requirements.
+
+    Use the Facade when you want to structure a subsystem into layers.
+
+    Create facades to define entry points to each level of a subsystem. You can reduce 
+    coupling between multiple subsystems by requiring them to communicate only through facades.
+

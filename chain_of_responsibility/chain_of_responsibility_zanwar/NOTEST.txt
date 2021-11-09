@@ -1,0 +1,4 @@
+Status: working 
+
+Article: Chain of responsibility 
+URL: https://dev.to/shubhamzanwar/design-patterns-chain-of-responsibility-2c75

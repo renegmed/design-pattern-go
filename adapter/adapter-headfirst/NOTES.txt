@@ -1,0 +1,40 @@
+Status: working 
+
+Title: Head First Design Patterns using Go — 6. Being Adaptive: the Adapter and Facade Patterns
+URL: https://faun.pub/head-first-design-patterns-using-go-6-being-adaptive-the-adapter-and-facade-patterns-c6361a602c3a
+
+
+Wiki Definition: 
+
+The Adapter Pattern converts the interface of a class into another interface 
+the clients expect. 
+
+Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
+
+
+Here's how the Client uses the Adapter 
+
+    1. The client makes a request to the adapter by calling a method 
+    on it using the target interface 
+
+    2. The adapter translates the request into on or more calls on 
+    the adaptee using the adaptee interface
+
+    3. The client receives the results of the call and never knows there 
+    is an adapter doing the translation.
+
+We’ve seen how the Adapter Pattern converts the interface into one that a client 
+is expecting. 
+
+We also know we achieve this by wrapping the object that has an incompatible 
+interface with an object that implements the correct one.
+
+BIG PICTURE
+
+Use the Adapter pattern when you want to use some existing class, but its 
+interface isn’t compatible with the rest of your code.
+
+The Adapter pattern lets you create a middle-layer class that serves as 
+a translator between your code and a legacy class, a 3rd-party class or 
+any other class with a weird interface.
+

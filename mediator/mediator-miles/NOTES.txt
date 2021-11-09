@@ -1,0 +1,13 @@
+Status: working 
+
+Title: The Mediator Pattern In Go
+URL: https://levelup.gitconnected.com/the-mediator-pattern-in-go-344ee5c8c2f4
+
+TMediator pattern is here to help when you have a collection of entities that 
+cannot or should not communicate with each other directly. 
+
+It allows you to have a central point of information flow so that your other 
+objects or methods can focus on their own business logic. 
+
+When used proactively, the Mediator pattern prevents tight coupling, separates 
+responsibilities and gives your code a flexible foundation to expand upon.

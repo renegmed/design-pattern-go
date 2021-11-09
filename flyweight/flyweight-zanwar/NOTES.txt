@@ -1,0 +1,10 @@
+Status: working 
+
+Article: Flyweight Pattern 
+URL: https://dev.to/shubhamzanwar/design-patterns-flyweight-pattern-27a1
+
+The Flyweight design pattern is a structural design pattern commonly used 
+when we want to group similar data for multiple objects. 
+
+The primary intent of this pattern is to store common data for multiple 
+objects in a single place and hence optimise for memory usage.

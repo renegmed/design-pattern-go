@@ -1,0 +1,14 @@
+Status: working 
+
+Title: Elegant way to implement template method pattern in Golang
+URL: https://newbedev.com/elegant-way-to-implement-template-method-pattern-in-golang
+
+
+The essence of the template method pattern is it allows you to inject in 
+an implementation of a particular function or functions into the skeleton 
+of an algorithm.
+
+You can achieve this in Go by injecting in a function or an interface into 
+your Runner. To achieve the basic template method pattern you don't really 
+need your Logger struct at all
+

@@ -1,0 +1,24 @@
+Status: working 
+
+Title: Go Builder Pattern — Builder Parameters
+URL: https://devcharmander.medium.com/go-builder-pattern-builder-parameters-637cd3f46240
+
+Builder Parameters
+
+What?
+
+Builder parameters help us to restrict usage of struct properties and functions directly.
+
+Why?
+
+Sometimes we want to restrict users from accessing the properties and functions of a 
+struct directly. We provide them with our APIs instead.
+
+Imagine, we have to create a new feature which can send emails, and you don’t want your 
+developers to start messing with your email object. You hide it with Builder parameters.
+
+You'll notice in the code that we don’t have access to the email struct nor the actual function 
+that sends an email.
+
+The user can use this API without bothering about the implementation and validation 
+logic to create a complex object.

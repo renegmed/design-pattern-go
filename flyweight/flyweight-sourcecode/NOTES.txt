@@ -1,0 +1,30 @@
+Status: working 
+
+Title: Golang Flyweight Pattern 
+URL: https://www.sourcecodeexamples.net/2021/06/golang-flyweight-pattern.html
+
+Flyweight is used to manage the state of an object with high variation. 
+
+The pattern allows us to share common parts of the object state among multiple objects, 
+instead of each object storing it. 
+
+Variable object data is referred to as an extrinsic state, and the rest of the object 
+state is intrinsic. Extrinsic data is passed to flyweight methods and will never be stored within it. 
+
+The flyweight pattern helps reduce the overall memory usage and the object initializing overhead. 
+
+The pattern helps create interclass relationships and lower memory to a manageable level.
+
+Flyweight Pattern Class Diagram
+-------------------------------
+
+The participants of the flyweight pattern are the FlyWeight interface, ConcreteFlyWeight, FlyWeightFactory, and the Client classes:
+
+    The FlyWeight interface (DataTransferObject) has a method through which flyweights can get and act on the extrinsic state.
+    
+    ConcreteFlyWeight (Address, Manager, etc.) implements the FlyWeight interface (DataTransferObject) to representflyweight objects.
+    
+    FlyweightFactory (DataTransferObjectFactory) is used to create and manage flyweight objects. The client (main) invokes FlyweightFactory 
+    to get a flyweight object. UnsharedFlyWeight can have a functionality that is not shared.
+    
+    Client classes (main)

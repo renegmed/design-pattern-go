@@ -1,0 +1,19 @@
+Status: working 
+
+Title: Builder Design Pattern in Golang
+URL: https://www.smartscribs.com/builder-design-pattern-in-golang/
+
+
+Builder design pattern is a creational design pattern that is used to encapsulate the construction logic of an object. This design pattern is used to separate the representation and construction of an object. It, thus, allows the client to construct different objects by following the same process.  This object depends upon the step by step methodology to create an object.
+
+
+Suppose the class of objects we are concerned with is Cell Phones. Now cell phones have a lot of attributes. Typically the class is extensive. We have different varieties of cell phones having different structures. And there are a lot of attributes. Some cell phones have a camera, others do not. Some cell phones have a Gyroscope, others do not. So we safely conclude that there are a lot of attributes and setting them in the constructor is not the right idea. The builder design pattern comes here to rescue. We define a Build Process, write the concrete implementations and then make a director to call the build process and deliver the product.
+
+
+Product: The structure defining the product. (In our case the Cell Phone).
+
+Build Process: It is the interface that defines the step to be taken for a product to be built. It defines no logic, just the blueprint of the process. It is what to do part of the code, not how to do it.
+
+Concrete Implementation: This is how to do part of the code. All the products implement the Build Process to serve their needs. Taking into consideration the cell phone example discussed, a Nokia phone will have a different concrete implementation than the Samsung phone.
+
+Director: Director is the client who constructs the product using the builder interface. Its responsibility is to execute the steps defined in the Build Process.

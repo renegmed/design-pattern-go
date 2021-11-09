@@ -1,0 +1,4 @@
+Status: working 
+
+Title: Strategy Pattern In Golang
+URL: https://medium.com/@sonasingh46/strategy-pattern-in-golang-cc8747d4dc25

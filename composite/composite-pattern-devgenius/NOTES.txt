@@ -1,0 +1,17 @@
+Status: working 
+
+Title: Composite design pattern
+URL: https://blog.devgenius.io/go-composite-pattern-393caaa0b105
+
+Composite Pattern falls under Structural Design Pattern. Based on the book 
+Design Patterns [Gamma et al.], the intent of this pattern is:
+
+    Compose objects into tree structures to represent part-whole hierarchies. 
+    Composite lets clients treat individual objects and compositions of objects uniformly.
+
+    — Design Patterns [Gamma et al.] p. 163
+
+This pattern is effective to dynamically compose a structure of objects. The easiest 
+way to describe it by imagining a set of objects composing a hierarchy. 
+
+For example, it can be a hierarchy of an organization.

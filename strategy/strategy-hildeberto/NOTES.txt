@@ -1,0 +1,5 @@
+Status: working 
+
+Title: Applying the Strategy Pattern to Get Prices from Different Sources in Go
+URL: https://www.hildeberto.com/2021/02/golang-strategy-pattern.html
+

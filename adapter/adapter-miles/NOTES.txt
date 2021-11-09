@@ -1,0 +1,66 @@
+Status: working 
+
+Title: The Adapter Pattern in Go
+URL: https://levelup.gitconnected.com/the-adapter-pattern-in-go-b400fdf6ff0a
+
+
+The primary goal of the Adapter pattern is to convert one interface 
+to another so that it matches what the client is expecting, without 
+changing the client code.
+
+It differs from the Mediator pattern because the Adapter pattern is built 
+for two objects to interact with each other, rather than serving as a 
+central source of communication for many objects. 
+
+The key definition would be that the Adapter pattern offers compatibility, 
+while the Mediator pattern offers communication and avoids tight coupling.
+
+Implementation In Go
+
+Imagine we own our own reusable SpaceX rocket capable of deploying satellites 
+to space. 
+
+Now, SpaceX contracts out for many different types of satellites (along with their own Starlink ones).
+
+In order to use the same rockets for all these different types of satellites, they 
+probably use some form of adapter technology that allows another company’s satellite 
+to connect to their rockets. This saves on having to build individual rockets for each 
+type of satellite and is part of why SpaceX is such a game changer.
+
+The Rocket 
+----------
+
+SpaceX uses a Falcon 9 rocket to launch their Starlink satellites. So, the Falcon 9 
+rocket will serve as our Client that has a method to insert a satellite into a Starlink port.
+
+We also have a payload that will accept a generic type, a nifty little Go trick I learned 
+while trying to add different types of satellites to the rocket. 
+
+Using []interface{} acts like a slice that can accept any type, so use at your own discretion!
+
+The Satellites 
+--------------
+Our falcon9Rocket will be deploying different types of satellites. It expects a Starlink satellite, 
+but SpaceX contracts many different types of satellites to be deployed into orbit! 
+
+The first step is to create our satellite interface. Again, as SpaceX we are expecting to be 
+inserting satellites into Starlink ports. We define the method insertSatelliteIntoStarlinkPort() 
+to accept a reference to a falcon9Rocket since we are going to be adding to its payload.
+
+The Oco2Satellite
+-----------------
+
+Note how the oco2Satellite has its own independent function to insert a satellite. What’s worse, 
+it expects an OCO2 port (not actually, it just has a different function signature/name 
+than the Starlink satellite, for the sake of example).
+
+How are we going to insert an OCO2 satellite when we are expecting a Starlink port 
+from our Falcon 9 rocket? With a satellite adapter of course!
+
+Satellite Adapter
+-----------------
+
+Our oco2SatelliteAdapter is our Adaptor that accepts a referenceoco2Satelite as our Adaptee. 
+
+From there, when we call insertSatelliteIntoStarlinkPort() from the Adapter, we actually 
+make a translation and call the method to insert a satellite into an OCO2 port.
